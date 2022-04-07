@@ -13,7 +13,7 @@ Create Mixpanel annotations from new releases.
 ## Installation
 
 ```sh
-npm install --dev semantic-release-mixpanel
+npm install --save-dev semantic-release-mixpanel
 ```
 
 ## Usage
@@ -46,3 +46,8 @@ Your Mixpanel project ID along with Service Account credentials are required. To
 | `skipCommit`       | `String`   | `undefined`                   | `"skipCommit": "^fix\\(deps\\):"`    | Skips notifying when `regex` matches at least one commit in the release                  |
 | `semverFilter`     | `String[]` | `["major", "minor", "patch"]` | `"semverFilter": ["major", "minor"]` | Skips releases that do not match one of the configured types                             |
 | `fullReleaseNotes` | `Boolean`  | `false`                       | `"fullReleaseNotes": true`           | Provides the full release notes in the annotation instead of a link to the release notes |
+
+## License
+
+- [MIT](./LICENSE) © [Anand Chowdhary](https://anandchowdhary.com)
+- Forked from [intuit/semantic-release-slack](https://github.com/intuit/semantic-release-slack)

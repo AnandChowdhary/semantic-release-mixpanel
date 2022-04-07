@@ -9,14 +9,13 @@
     "access": "public"
   },
   "main": "index.js",
-  "license": "SEE LICENSE IN LICENSE.md",
-  "author": "David Aghassi",
+  "license": "LICENSE",
+  "author": "Anand Chowdhary <mail@anandchowdhary.com>",
   "repository": {
     "url": "git@github.com:AnandChowdhary/semantic-release-mixpanel.git"
   },
   "scripts": {},
   "dependencies": {
-    "@atomist/slack-messages": "1.1.1",
     "@semantic-release/error": "2.2.0",
     "aggregate-error": "3.0.1",
     "debug": "4.1.1",

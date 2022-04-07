@@ -1,7 +1,7 @@
-const debug = require('debug')('@intuit/semantic-release-slack');
-const verify = require('./src/verify');
-const successCall = require('./src/success');
-const failCall = require('./src/fail');
+const debug = require("debug")("semantic-release-mixpanel");
+const verify = require("./src/verify");
+const successCall = require("./src/success");
+const failCall = require("./src/fail");
 
 let verified;
 

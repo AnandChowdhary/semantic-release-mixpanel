@@ -3,5 +3,7 @@
  * semantic-release passes us
  */
 module.exports = (pluginConfig, { env }) => ({
-  slackWebhookUrl: env.SLACK_WEBHOOK_URL || null,
+  mixpanelProjectId: env.MIXPANEL_PROJECT_ID || null,
+  mixpanelServiceAccountUsername: env.MIXPANEL_SERVICE_ACCOUNT_USERNAME || null,
+  mixpanelServiceAccountPassword: env.MIXPANEL_SERVICE_ACCOUNT_PASSWORD || null,
 });

@@ -1,14 +1,18 @@
 /**
- * Object sent to slack hook when sending a message
- * @param {String} text the content of the message
+ * Object sent to Mixpanel endpoint
+ * @param {String} description the name and content of the release
+ * @param {String} username HTTP basic auth username
+ * @param {String} password HTTP basic auth password
  */
-module.exports = (text) => ({
-  method: 'POST',
+module.exports = (description, username, password) => ({
+  method: "POST",
   headers: {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
+    Authorization:
+      "Basic " + Buffer.from(username + ":" + password).toString("base64"),
   },
   body: JSON.stringify({
-    text,
-    mrkdwn: true,
+    date: new Date().toISOString().substring(0, 19).replace("T", " "),
+    description,
   }),
 });

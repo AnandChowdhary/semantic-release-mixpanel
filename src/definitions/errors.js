@@ -1,6 +1,14 @@
 module.exports = {
-  EMISSINGSLACKWEBHOOKURL: () => ({
-    message: 'Missing Slack Webhook Url',
-    details: `A slack webhook URL is required to post updates to a channel. Ensure you have the environment variable SLACK_WEBHOOK_URL set appropriately and try again`,
+  EMISSINGMIXPANELSERVICEID: () => ({
+    message: "Missing Mixpanel project ID",
+    details: `Mixpanel Project ID is required. Ensure you have the environment variable MIXPANEL_PROJECT_ID set appropriately and try again`,
+  }),
+  EMISSINGMIXPANELUSERNAME: () => ({
+    message: "Missing Mixpanel username",
+    details: `Mixpanel Service Account username is required. Ensure you have the environment variable MIXPANEL_SERVICE_ACCOUNT_USERNAME set appropriately and try again`,
+  }),
+  EMISSINGMIXPANELPASSWORD: () => ({
+    message: "Missing Mixpanel password",
+    details: `Mixpanel Service Account password is required. Ensure you have the environment variable MIXPANEL_SERVICE_ACCOUNT_PASSWORD set appropriately and try again`,
   }),
 };
